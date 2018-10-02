@@ -49,7 +49,7 @@ Your app is ready to be deployed!
 
 ### `Static Server`
 
-To setup a static HTTP enviroment to run the build generated in the previous step, you can install this lightweight node package as follows:
+To setup a static HTTP enviroment to run the build generated in the previous step, you can install this lightweight node [serve](https://github.com/zeit/serve) package as follows:
 
 ```js
 npm install -g serve
