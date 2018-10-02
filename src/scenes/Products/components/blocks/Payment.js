@@ -129,6 +129,7 @@ const Payment = ({ ...props }) => {
             variant='contained' 
             color='default' 
             fullWidth
+            disabled={(!props.validations.isValid && props.openColapse) ? true : false}
             onClick={props.handleSubmit}
             className={classes.buyButton}>
             Buy Now
