@@ -2,40 +2,34 @@ This project is test and was bootstrapped with [Create React App](https://github
 
 ## Folder Structure
 
-After creation, your project should look like this:
+Below you wlll find the App folder structure:
 
 ```
-my-app/
-  README.md
-  node_modules/
-  package.json
-  public/
-    index.html
-    favicon.ico
-  src/
-    App.css
-    App.js
-    App.test.js
-    index.css
-    index.js
-    logo.svg
+src/
+  assets/
+  components/
+  helpers/
+  reducers/
+  scenes/
+  services/
+  store/
+  utils/
 ```
 
-For the project to build, **these files must exist with exact filenames**:
+A brief explanation of each folder responsibility:
 
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
+* `assets` is the place where all the media files are stored;
+* `components` contains all components used in multiple places in the application.
+* `helpers` contains classes that execute a specifi feature that can be used in multiples parts of the application.
+* `reducers` contains the root reducers that exports all the state to the redux store.
+* `scenes` is the folder that contain the actual domains of the application, in others folder structure patterns it can be known as `modules` or `screens`.
+* `services` contains the state container (Reducers, Actions, Types) files separated by domains.
+* `store` contains the redux store.
+* `utils` contains utils variables and miscelaneous.
 
-You can delete or rename the other files.
+### `npm install`
 
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, otherwise Webpack won’t see them.
-
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
-
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
+If you`re cloning this project for the first time you should run this command to install all the necessaries dependencies.
 
 ### `npm start`
 
@@ -44,11 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](#running-tests) for more information.
 
 ### `npm run build`
 
