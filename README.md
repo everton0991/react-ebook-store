@@ -1,4 +1,4 @@
-This project is test and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
+This project is only for test purpose and was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Folder Structure
 
@@ -20,12 +20,12 @@ A brief explanation of each folder responsibility:
 
 * `assets` is the place where all the media files are stored;
 * `components` contains all components used in multiple places in the application.
-* `helpers` contains classes that execute a specifi feature that can be used in multiples parts of the application.
-* `reducers` contains the root reducers that exports all the state to the redux store.
-* `scenes` is the folder that contain the actual domains of the application, in others folder structure patterns it can be known as `modules` or `screens`.
+* `helpers` contains classes that execute a specific feature that can be used in multiple parts of the application.
+* `reducers` contains the root reducer that exports all the state to the redux store.
+* `scenes` is the folder that contain the actual domains of the application, in other folder structure patterns it can be known as `modules` or `screens`.
 * `services` contains the state container (Reducers, Actions, Types) files separated by domains.
 * `store` contains the redux store.
-* `utils` contains utils variables and miscelaneous.
+* `utils` contains util variables and miscelaneous.
 
 ### `npm install`
 
@@ -47,4 +47,13 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br>
 Your app is ready to be deployed!
 
-See the section about [deployment](#deployment) for more information.
+### `Static Server`
+
+To setup a static HTTP enviroment to run the build generated in the previous step, you can install this lightweight node package as follows:
+
+```js
+npm install -g serve
+serve -s build
+```
+
+
