@@ -31,7 +31,7 @@ const Footer = ({ ...props }) => {
             variant='headline'>E-Book Store</Typography>
           <Typography
             className={classes.powered}
-            variant='body2'>Powered by EBANX - Products B2B</Typography>
+            variant='body2'>Products B2B</Typography>
         </Grid>
         <Grid item xs={2}>
           <Typography
